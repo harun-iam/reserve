@@ -4,8 +4,8 @@ services:
     php-apache:
         image: senseshare/php-apache
         ports:
-            - 80:80
-            - 443:443
+            - 8080:80
+            - 8443:443
         volumes:
             - ./web:/var/www/html
             - ./config:/var/www/config
